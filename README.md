@@ -5,15 +5,15 @@ Explore your laravel application routes with graphical user interface.
 
 ## Installation
 
-`composer required infyomlabs/routes-explorer`
+`composer require infyomlabs/routes-explorer`
 
 Add Service Provider in your `config/app.php`:
 
-    `\InfyOm\RoutesExplorer\RoutesExplorerServiceProvider::class,`
+    \InfyOm\RoutesExplorer\RoutesExplorerServiceProvider::class,
 
 Run publish command:
 
-    `php artisan vendor:publish`
+    php artisan vendor:publish
 
 Open `http://{your_domain}/routes-explorer`
 
