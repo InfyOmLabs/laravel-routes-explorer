@@ -3,6 +3,8 @@ InfyOm Routes Explorer (still in beta)
 
 Explore your laravel application routes with the better GUI.
 
+![Laravel Routes Explorer](http://infyom.com/images/routes-explorer.png "Laravel Routes Explorer")
+
 ## Installation
 
 `composer require infyomlabs/routes-explorer`
