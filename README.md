@@ -1,7 +1,7 @@
 InfyOm Routes Explorer (still in beta)
 ==============================
 
-Explore your laravel application routes with graphical user interface.
+Explore your laravel application routes with the better GUI.
 
 ## Installation
 
@@ -32,20 +32,20 @@ Open `http://{your_domain}/routes-explorer`
 
     `php artisan vendor:publish --tag=views`
 
-    After running this command, view file will be published to `rosources/views/routes/routes.php`. Customize it the way you want.
+    After running this command, view file will be published to `resources/views/routes/routes.php`. Customize it the way you want.
 
 3. Change `view` parameter in `config/infyom/routes_explorer.php` to `routes.routes`.
 
 ## Security
-Of course, you need to secure this route `routes-explorer` in production environment.
+Of course, you need to secure this route `routes-explorer` in the production environment.
 
 You can find option `enable_explorer` into `config/infyom/routes_explorer.php` and simply make it false while in production environment directly or via `.env`. 
 
 ## Track Api calls count
 
-By time, our project grows and had a lots of routes and api endpoints. And it's really difficult to figure out which routes are used and which routes are not used.
+By the time, our project grows with lots of routes and api endpoints. And it's really difficult to figure out which routes are most used or used or not used at all.
 
-Also, in some cases, we want to know, which routes are frequently called and we want to cache those data and lots of other real life practical problems.
+In some cases, we also want to know, which routes are frequently called and we want to cache those data. Other lots of real life practical problems and use cases can be there with our routes.
 
 To start tracking api calls, you need to perform following steps:
 
