@@ -25,7 +25,8 @@ class RoutesExplorer
             $routes[$route->uri] = [
                 'name' => isset($namedRoutesUri[$route->uri]) ? $namedRoutesUri[$route->uri] : '',
                 'url' => $route->uri,
-                'methods' => implode(", ", $route->methods())
+                'methods' => implode(", ", $route->methods()),
+                'count' => 0
             ];
         }
 
