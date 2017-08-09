@@ -19,11 +19,12 @@ Open `http://{your_domain}/routes-explorer`
 
 ## Customization
 1. Customize Routes
-You can customize your route to anything other than `routes-explorer`.
+
+    You can customize your route to anything other than `routes-explorer`.
 
     Open `config/infyom/routes_explorer.php`.
 
-    Change the value of `route` parameter to your's one.
+    Change the value of `route` parameter to your favorite one.
 
 2. Customize View
 
