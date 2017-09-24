@@ -27,5 +27,12 @@
         "psr-4": {
             "InfyOm\\RoutesExplorer\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\InfyOm\\RoutesExplorer\\RoutesExplorerServiceProvider"
+            ]
+        }
     }
 }
