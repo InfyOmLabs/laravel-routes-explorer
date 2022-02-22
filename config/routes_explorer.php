@@ -48,7 +48,7 @@ return [
     'collections' => [
 
         // collect api calls count
-        'api_calls_count' => false
+        'api_calls_count' => false,
 
-    ]
+    ],
 ];
