@@ -23,10 +23,10 @@ class RoutesExplorer
         $routes = [];
         foreach ($allRoutes as $route) {
             $routes[$route->uri] = [
-                'name' => isset($namedRoutesUri[$route->uri]) ? $namedRoutesUri[$route->uri] : '',
-                'url' => $route->uri,
-                'methods' => implode(", ", $route->methods()),
-                'count' => 0
+                'name'    => isset($namedRoutesUri[$route->uri]) ? $namedRoutesUri[$route->uri] : '',
+                'url'     => $route->uri,
+                'methods' => implode(', ', $route->methods()),
+                'count'   => 0,
             ];
         }
 
