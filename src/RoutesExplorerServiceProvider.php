@@ -3,6 +3,7 @@
 namespace InfyOm\RoutesExplorer;
 
 use Illuminate\Support\ServiceProvider;
+use InfyOm\RoutesExplorer\Middleware\RoutesExplorerMiddleware;
 
 class RoutesExplorerServiceProvider extends ServiceProvider
 {
@@ -33,6 +34,9 @@ class RoutesExplorerServiceProvider extends ServiceProvider
         ], 'views');
 
         $this->loadViewsFrom(__DIR__.'/../views', 'infyomlabs');
+
+        $router = $this->app['router'];
+        $router->pushMiddlewareToGroup('api', RoutesExplorerMiddleware::class);
 
         if (config('infyom.routes_explorer.enable_explorer')) {
             $this->app['router']->get(
